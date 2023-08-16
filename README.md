@@ -57,6 +57,7 @@ There are included hooks that simulate a stream of price data for a set of stock
    value: number, // the price of the stock
   }
 ```
+- You can replace 'tick' with an actual timestamp
 
 The data returned from `useStockStream` will update every second, with a new value added to the end (and the oldest removed).
 
@@ -77,6 +78,12 @@ Each of the modules is built with `BaseModule.tsx` as a wrapper.
 ## Ideas
 
 Again, this is open-ended, so you can design your own tasks (or your hiring manager may suggest some specific requests).
+
+#### Layout Ideas
+- Below is a generic view of a dashboard concept that is common here.  Grids updating with rows of data.  Drill down by individual name.
+- You may want to adjust how the `useStockData` hook works (to provide independently updating events), and/or build additional data hooks that update for individual stocks.
+
+<img src="image.png" alt="Dashboard concept" width="800"/>
 
 #### Module ideas
 
