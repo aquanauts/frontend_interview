@@ -24,7 +24,7 @@ const nextStep = (current: number): number => {
 };
 
 export const toFixedValue = (n: number) => parseFloat(n.toFixed(2));
-
+//You can change 'tick' here to an actual timestamp
 interface StockDatum {
   value: number;
   tick: number;
