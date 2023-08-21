@@ -6,11 +6,11 @@ This is intentionally open-ended. Show us the skills you want to share. If you l
 
 ## Getting Started
 
-Clone this repo from github, and then set up your own working copy.
+Fork this repo on Github and proceed by working on that.
 
 #### Build the application
 
-_Prerequesite: Install [Node](https://nodejs.org/en) 18+. You should have `node` and `npm` available from your command-line._
+_Prerequisite: Install [Node](https://nodejs.org/en) 18+. You should have `node` and `npm` available from your command-line._
 
 ```
 npm install
@@ -28,7 +28,7 @@ You are given a dashboard with a few simple pre-built modules. You are free to u
 these as a starting point. You should make your own dashboard modules,
 and improve this codebase in any way you see fit.
 
-When you are done working on it, you can share your clone with us on github, or if you prefer not to share publicly, you can zip it up (remove `node_modules` directory first) and send it back to your hiring manager.
+When you are done working on it, you can share a link to your fork, or if you prefer not to share publicly, you can zip it up (be sure to exclude the `node_modules` directory) and send it back to your hiring manager.
 
 ## Project structure
 
@@ -53,8 +53,8 @@ There are included hooks that simulate a stream of price data for a set of stock
 
 ```javascript
   {
-   tick: number, // like a time stamp, but just [0, 1, 2, ...]
-   value: number, // the price of the stock
+   tick: number,   // like a time stamp, but just [0, 1, 2, ...]
+   value: number,  // the price of the stock
   }
 ```
 - You can replace 'tick' with an actual timestamp
@@ -80,7 +80,7 @@ Each of the modules is built with `BaseModule.tsx` as a wrapper.
 Again, this is open-ended, so you can design your own tasks (or your hiring manager may suggest some specific requests).
 
 #### Layout Ideas
-- Below is a generic view of a dashboard concept that is common here.  Grids updating with rows of data.  Drill down by individual name.
+- Below is a generic view of a dashboard concept that is common here. Grids updating with rows of data. Drill down by individual name.
 - You may want to adjust how the `useStockData` hook works (to provide independently updating events), and/or build additional data hooks that update for individual stocks.
 
 <img src="image.png" alt="Dashboard concept" width="800"/>
